@@ -18,6 +18,7 @@ $ php artisan key:generate
 * Kemudian jalankan perintah berikut untuk melakukan _migrate_ database
 ```
 $ php artisan migrate
+$ php artisan db:seed
 ```
 * Terakhir, jalankan perintah berikut untuk menjalankan project.
 ```
