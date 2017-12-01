@@ -21,6 +21,5 @@ $ php artisan migrate
 ```
 * Terakhir, jalankan perintah berikut untuk kompilasi file asset, dan menjalankan project.
 ```
-$ npm run dev
 $ php artisan serv
 ```
