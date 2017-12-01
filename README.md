@@ -19,7 +19,7 @@ $ php artisan key:generate
 ```
 $ php artisan migrate
 ```
-* Terakhir, jalankan perintah berikut untuk kompilasi file asset, dan menjalankan project.
+* Terakhir, jalankan perintah berikut untuk menjalankan project.
 ```
 $ php artisan serv
 ```
