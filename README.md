@@ -23,3 +23,7 @@ $ php artisan migrate
 ```
 $ php artisan serv
 ```
+
+## DEFAULT LOGIN APLIKASI
+- Username: ichsan
+- Password: ichsan
