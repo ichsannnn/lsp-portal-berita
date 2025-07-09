@@ -14,7 +14,6 @@ class CreateKategorisTable extends Migration
     public function up()
     {
         Schema::create('kategoris', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
             $table->increments('kategori_id');
             $table->string('kategori_nama');
             $table->enum('kategori_status', ['Aktif', 'Tidak Aktif']);

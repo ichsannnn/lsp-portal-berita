@@ -68,11 +68,11 @@
                 <div class="row margin-bottom">
                   <div class="input-field col s12 m12 l12">
                     <p>
-                      <input type="radio" id="status1" name="user_status" value="1" class="with-gap" @if ($data->user_status == "Aktif") checked @endif>
+                      <input type="radio" id="status1" name="user_status" value="Aktif" class="with-gap" @if ($data->user_status == "Aktif") checked @endif>
                       <label for="status1">Aktif</label>
                     </p>
                     <p>
-                      <input type="radio" id="status2" name="user_status" value="2" class="with-gap" @if ($data->user_status == "Tidak Aktif") checked @endif>
+                      <input type="radio" id="status2" name="user_status" value="Tidak Aktif" class="with-gap" @if ($data->user_status == "Tidak Aktif") checked @endif>
                       <label for="status2">Tidak Aktif</label>
                     </p>
                   </div>

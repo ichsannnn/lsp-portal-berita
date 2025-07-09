@@ -29,7 +29,7 @@ class BeritaController extends Controller
       $baru = Berita::orderBy('created_at', 'desc')->get()->take(5);
       $populer = Berita::orderBy('berita_view', 'desc')->get()->take(5);
       $news = Berita::where('berita_link', $slug)->first();
-      $comment = Komentar::whereKomentarBeritaId($news->berita_id)->whereKomentarStatus(1)->orderBy('komentar_id', 'desc')->get();
+      $comment = Komentar::whereKomentarBeritaId($news->berita_id)->whereKomentarStatus('Aktif')->orderBy('komentar_id', 'desc')->get();
       $news->berita_view = $news->berita_view + 1;
       $news->save();
       return view('lsp.dashboard.detail', ['data' => $news, 'komentar' => $comment, 'baru' => $baru, 'populer' => $populer]);

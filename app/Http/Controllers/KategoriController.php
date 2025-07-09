@@ -65,7 +65,7 @@ class KategoriController extends Controller
     public function activate($id)
     {
       $cat = Kategori::find($id);
-      $cat->kategori_status = 1;
+      $cat->kategori_status = 'Aktif';
       $cat->save();
 
       return redirect(url('categories'));
@@ -74,7 +74,7 @@ class KategoriController extends Controller
     public function deactivate($id)
     {
       $cat = Kategori::find($id);
-      $cat->kategori_status = 2;
+      $cat->kategori_status = 'Tidak Aktif';
       $cat->save();
 
       return redirect(url('categories'));

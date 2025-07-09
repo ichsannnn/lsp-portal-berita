@@ -110,7 +110,7 @@ class UserController extends Controller
     public function activate($username)
     {
       $user = User::find($username);
-      $user->user_status = 1;
+      $user->user_status = 'Aktif';
       $user->save();
 
       return redirect(url('users'));
@@ -119,7 +119,7 @@ class UserController extends Controller
     public function deactivate($username)
     {
       $user = User::find($username);
-      $user->user_status = 2;
+      $user->user_status = 'Tidak Aktif';
       $user->save();
 
       if (Auth::user()->user_status == "Aktif") {

@@ -61,11 +61,11 @@
                   <div class="row margin-bottom">
                     <div class="input-field col s12 m12 l12">
                       <p>
-                        <input type="radio" id="utama1" name="utama" value="1" class="with-gap" checked>
+                        <input type="radio" id="utama1" name="utama" value="Ya" class="with-gap" checked>
                         <label for="utama1">Ya</label>
                       </p>
                       <p>
-                        <input type="radio" id="utama2" name="utama" value="2" class="with-gap" >
+                        <input type="radio" id="utama2" name="utama" value="Tidak" class="with-gap" >
                         <label for="utama2">Tidak</label>
                       </p>
                     </div>
@@ -80,11 +80,11 @@
                   <div class="row margin-bottom">
                     <div class="input-field col s12 m12 l12">
                       <p>
-                        <input type="radio" id="status1" name="status" value="1" class="with-gap" checked>
+                        <input type="radio" id="status1" name="status" value="Aktif" class="with-gap" checked>
                         <label for="status1">Aktif</label>
                       </p>
                       <p>
-                        <input type="radio" id="status2" name="status" value="2" class="with-gap" >
+                        <input type="radio" id="status2" name="status" value="Tidak Aktif" class="with-gap" >
                         <label for="status2">Tidak Aktif</label>
                       </p>
                     </div>

@@ -21,7 +21,7 @@ class KomentarController extends Controller
       $comment->komentar_email = $r->input('email');
       $comment->komentar_website = $r->input('website');
       $comment->komentar_isi = $r->input('isi');
-      $comment->komentar_status = 1;
+      $comment->komentar_status = 'Aktif';
       $comment->komentar_tglinput = date('Y-m-d H:i:s');
       $comment->save();
 
@@ -43,7 +43,7 @@ class KomentarController extends Controller
     public function activate($id)
     {
       $comment = Komentar::find($id);
-      $comment->komentar_status = 1;
+      $comment->komentar_status = 'Aktif';
       $comment->save();
       return redirect(url('comments'));
     }
@@ -51,7 +51,7 @@ class KomentarController extends Controller
     public function deactivate($id)
     {
       $comment = Komentar::find($id);
-      $comment->komentar_status = 2;
+      $comment->komentar_status = 'Tidak Aktif';
       $comment->save();
       return redirect(url('comments'));
     }

@@ -62,11 +62,11 @@
                   <div class="row margin-bottom">
                     <div class="input-field col s12 m12 l12">
                       <p>
-                        <input type="radio" id="utama1" name="utama" value="1" class="with-gap" @if ($berita->berita_utama == "Ya") checked @endif>
+                        <input type="radio" id="utama1" name="utama" value="Ya" class="with-gap" @if ($berita->berita_utama == "Ya") checked @endif>
                         <label for="utama1">Ya</label>
                       </p>
                       <p>
-                        <input type="radio" id="utama2" name="utama" value="2" class="with-gap" @if ($berita->berita_utama == "Tidak") checked @endif>
+                        <input type="radio" id="utama2" name="utama" value="Tidak" class="with-gap" @if ($berita->berita_utama == "Tidak") checked @endif>
                         <label for="utama2">Tidak</label>
                       </p>
                     </div>
@@ -81,11 +81,11 @@
                   <div class="row margin-bottom">
                     <div class="input-field col s12 m12 l12">
                       <p>
-                        <input type="radio" id="status1" name="status" value="1" class="with-gap" @if ($berita->berita_status == "Aktif") checked @endif>
+                        <input type="radio" id="status1" name="status" value="Aktif" class="with-gap" @if ($berita->berita_status == "Aktif") checked @endif>
                         <label for="status1">Aktif</label>
                       </p>
                       <p>
-                        <input type="radio" id="status2" name="status" value="2" class="with-gap" @if ($berita->berita_status == "Tidak Aktif") checked @endif>
+                        <input type="radio" id="status2" name="status" value="Tidak Aktif" class="with-gap" @if ($berita->berita_status == "Tidak Aktif") checked @endif>
                         <label for="status2">Tidak Aktif</label>
                       </p>
                     </div>

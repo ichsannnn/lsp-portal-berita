@@ -14,7 +14,6 @@ class CreateBeritasTable extends Migration
     public function up()
     {
         Schema::create('beritas', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
             $table->increments('berita_id');
             $table->integer('berita_kategori_id')->unsigned();
             $table->string('berita_judul');

@@ -98,7 +98,7 @@ class RegisterController extends Controller
       $user->user_pass = bcrypt($password);
       $user->user_namalengkap = $r->input('nama');
       $user->user_email = $r->input('user_email');
-      $user->user_status = 2;
+      $user->user_status = 'Tidak Aktif';
       $user->save();
 
       if (Auth::attempt(['user_name' => $username, 'password' => $password])) {
