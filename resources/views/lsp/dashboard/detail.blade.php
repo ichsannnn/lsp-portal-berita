@@ -86,9 +86,16 @@
                 </div>
               </div>
             </form>
-
+          </div>
+        </div>
+      </div>
+      <div class="row-widget">
+        <div class="card">
+          <div class="card-content">
             @foreach ($komentar as $key => $value)
+              @if (!$loop->first)
               <hr>
+              @endif
               <p>
                 <i class="material-icons title">email</i> <span class="card-title"> {{ $value->komentar_email }}</span>
               </p>
